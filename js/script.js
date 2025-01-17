@@ -96,7 +96,7 @@ Secure your spot today! </strong>`,
       };
   
       const data = translations[lang];
-      $(".nav-menu").children().each(function (index) {
+      $(".navbar").children().each(function (index) {
         $(this).text(data.nav[index]);
       });
       $(".language-selected").text(data.langText)

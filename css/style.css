@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=MedievalSharp&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
+    margin: 0;
     font-family: "Barlow Condensed", serif;
     color: #333;
 }
@@ -17,7 +18,7 @@ a {
 
 .header {
     background-color: #252525;
-    padding: 20px 0; /* Fixed: Removed space between 20 and px */
+    padding: 20px 0; 
 }
 
 .header-container {
@@ -146,6 +147,19 @@ a.zh:before {
     display: block;
 }
 
+.hamburguer-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburguer-menu .bar {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+}
 .section {
     height: 70vh;
     background-image: url(../image/fundo.webp);
@@ -236,7 +250,37 @@ footer span {
     font-style: italic;
 }
 
+@media (max-width: 768px) {
+    .hamburguer-menu {
+        display: flex;
 
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu a {
+        margin: 10px 0;
+        text-align: center;
+
+    }
+
+    .language {
+        text-align: center;
+    }
+}
 
 
 
