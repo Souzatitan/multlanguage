@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=MedievalSharp&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: "Barlow Condensed", serif;
+    color: #333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color: #252525;
+    padding: 20px 0; /* Fixed: Removed space between 20 and px */
+}
+
+.header-container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a.logo {
+    color: #fff;
+    font-size: 2.25em;
+    font-weight: 300;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu > a {
+    color: #fff;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.nav-menu a:hover {
+    background-color: #000;
+}
+
+.language {
+    position: relative;
+    width: 120px;
+    margin-left: 40px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.language-selected {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.language-selected:before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url("https://flagsapi.com/BR/flat/64.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.language-selected.change-br:before {
+    background-image: url("https://flagsapi.com/BR/flat/64.png");
+
+}
+.language-selected.change-en:before {
+    background-image: url("https://flagsapi.com/US/flat/64.png");
+
+}
+.language-selected.change-es:before {
+    background-image: url("https://flagsapi.com/ES/flat/64.png");
+
+}
+
+.language-selected.change-zh:before {
+    background-image: url("https://flagsapi.com/CN/flat/64.png");
+}
+.language ul {
+    position: absolute;
+    width: 140px;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    padding-top: 10px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.language ul li {
+    list-style: none;
+}
+
+.language ul li a {
+    display: block;
+    color: #252525;
+    padding: 5px 10px; /* Fixed: Corrected padding syntax */
+}
+
+.language ul li:hover {
+    background-color: #f8f8f8;
+}
+
+.language ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+a.br:before {
+    background-image: url("https://flagsapi.com/BR/flat/64.png");
+}
+
+a.en:before {
+    background-image: url("https://flagsapi.com/US/flat/64.png");
+}
+a.es:before {
+    background-image: url("https://flagsapi.com/ES/flat/64.png");
+}
+
+a.zh:before {
+    background-image: url("https://flagsapi.com/CN/flat/64.png");
+}
+
+.language:hover ul {
+    display: block;
+}
+
+.section {
+    height: 70vh;
+    background-image: url(../image/fundo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 60px 0;
+}
+.textarea{
+    margin: 20px;
+    margin-top: 0;
+    background: rgba(0, 255, 255, 0.1);
+    backdrop-filter: blur(15px); /* Aplica o blur ao fundo */
+    color: #fff; /* Cor da fonte */
+    padding: 10px 15px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas (opcional) */
+    display: flex;
+    height: 55vh;
+    flex-direction: column;
+   
+}
+.section h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color:#46ce10;
+    padding: 20px;
+   
+}
+
+#sub {
+    max-width: 960px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+#subject {
+    max-width: 960px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+section ul {
+    list-style-position: inside;
+    color: #fff;
+    font-size: 1.5em;
+    
+
+}
+
+.about {
+    background-color: #252525;
+    padding: 64px 0;
+}
+
+.about-container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-container ul li {
+    list-style: none;
+    padding-top: 10px;
+}
+
+.about-container ul li a{
+    color: #8b8b8b;
+}
+
+.about-container ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    padding: 32px;
+    background-color: #000;
+    text-align: center;
+}
+
+footer span {
+    color: #8b8b8b;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
