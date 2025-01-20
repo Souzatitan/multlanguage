@@ -39,10 +39,10 @@ $(function () {
             <li><strong>Flexibility:</strong> Study at your own pace with schedules that fit into your routine.</li><br>
             <li><strong>Expert Instructors:</strong> Always ready to help you achieve fluency.</li><br>
           </ul>
-`,
-subj: `<u>Sign up now and take advantage of exclusive offers for new students!</u><br><br>
-<strong>Speak. Live. Conquer. <br>
-Secure your spot today! </strong>`,
+          `,
+          subj: `<u>Sign up now and take advantage of exclusive offers for new students!</u><br><br>
+          <strong>Speak. Live. Conquer. <br>
+          Secure your spot today! </strong>`,
 
           langClass: "change-en",
           langText: "en-US"
@@ -96,7 +96,7 @@ Secure your spot today! </strong>`,
       };
   
       const data = translations[lang];
-      $(".navbar").children().each(function (index) {
+      $("#nav-menu").children().each(function (index) {
         $(this).text(data.nav[index]);
       });
       $(".language-selected").text(data.langText)
