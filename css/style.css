@@ -161,23 +161,31 @@ a.zh:before {
     margin: 3px 0;
 }
 .section {
-    height: 70vh;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
     background-image: url(../image/fundo.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
-    padding: 60px 0;
+    background-position: center;
+    
+    
+    
 }
-.textarea{
-    margin: 20px;
-    margin-top: 0;
+.textarea {
+    margin: auto;
     background: rgba(0, 255, 255, 0.1);
-    backdrop-filter: blur(15px); /* Aplica o blur ao fundo */
-    color: #fff; /* Cor da fonte */
-    padding: 10px 15px; /* Espaçamento interno */
-    border-radius: 10px; /* Bordas arredondadas (opcional) */
+    backdrop-filter: blur(15px); 
+    color: #fff; 
+    padding: 10px 15px; 
+    border-radius: 10px; 
     display: flex;
-    height: 55vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
     flex-direction: column;
    
 }
@@ -263,8 +271,9 @@ footer span {
         position: absolute;
         top: 60px;
         right: 0;
-        width: 100%;
+        width: 50%;
         padding: 10px 0;
+        z-index: 1;
     }
 
     .nav-menu.active {
@@ -280,6 +289,29 @@ footer span {
     .language {
         text-align: center;
     }
+
+    .section {
+        width: 100%;
+    }
+
+    .about-container {
+        margin: 25px;
+    }
+}
+
+@media (max-width: 400px) {
+    .section {
+        margin: auto;
+        height: 140vh;
+        width: 100%;
+        
+    }
+
+    .textarea {
+        width: 90%;
+        
+    }
+    
 }
 
 
